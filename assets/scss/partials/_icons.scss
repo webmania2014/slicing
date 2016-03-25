@@ -1,0 +1,440 @@
+.logo {
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+}
+@font-face {
+    font-family: "brightergy-icons";
+    src:url("../font/brightergy-icons.eot");
+    src:url("../font/brightergy-icons.eot?#iefix") format("embedded-opentype"),
+    url("../font/brightergy-icons.woff") format("woff"),
+    url("../font/brightergy-icons.ttf") format("truetype"),
+    url("../font/brightergy-icons.svg#brightergy-icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+[data-icon]:before {
+    font-family: "brightergy-icons" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "brightergy-icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-call-phone:before {
+    content: "a";
+}
+.icon-menu-ceo:before {
+    content: "b";
+}
+.icon-menu-consumption:before {
+    content: "c";
+}
+.icon-menu-education:before {
+    content: "d";
+}
+.icon-menu-facility:before {
+    content: "e";
+}
+.icon-menu-finance:before {
+    content: "f";
+}
+.icon-menu-generation:before {
+    content: "g";
+}
+.icon-menu-house:before {
+    content: "h";
+}
+.icon-menu-nonprofits:before {
+    content: "i";
+}
+.icon-menu-operations:before {
+    content: "j";
+}
+.icon-menu-supply:before {
+    content: "k";
+}
+.icon-accum:before {
+    content: "l";
+}
+.icon-arrows:before {
+    content: "m";
+}
+.icon-battery:before {
+    content: "n";
+}
+.icon-bulb:before {
+    content: "o";
+}
+.icon-cloud:before {
+    content: "p";
+}
+.icon-counter:before {
+    content: "q";
+}
+.icon-electricity:before {
+    content: "r";
+}
+.icon-gear:before {
+    content: "s";
+}
+.icon-globe:before {
+    content: "t";
+}
+.icon-globearrows:before {
+    content: "u";
+}
+.icon-graph:before {
+    content: "v";
+}
+.icon-house:before {
+    content: "w";
+}
+.icon-nuclear:before {
+    content: "x";
+}
+.icon-plug:before {
+    content: "y";
+}
+.icon-plugin:before {
+    content: "z";
+}
+.icon-socket:before {
+    content: "A";
+}
+.icon-solar:before {
+    content: "B";
+}
+.icon-sun:before {
+    content: "C";
+}
+.icon-switcher:before {
+    content: "D";
+}
+.icon-lightbulb:before {
+    content: "E";
+}
+.icon-google-plus:before {
+    content: "F";
+}
+.icon-fontawesome-webfont:before {
+    content: "G";
+}
+.icon-github:before {
+    content: "H";
+}
+.icon-github-square:before {
+    content: "I";
+}
+.icon-globe-world:before {
+    content: "J";
+}
+.icon-google-plus-1:before {
+    content: "K";
+}
+.icon-home:before {
+    content: "L";
+}
+.icon-heart-empty:before {
+    content: "M";
+}
+.icon-heart:before {
+    content: "N";
+}
+.icon-close-delete:before {
+    content: "Q";
+}
+.icon-check-mark-circle:before {
+    content: "P";
+}
+.icon-chevron-right:before {
+    content: "O";
+}
+.icon-chevron-left:before {
+    content: "R";
+}
+.icon-chevron-up:before {
+    content: "S";
+}
+.icon-chevron-down:before {
+    content: "T";
+}
+.icon-caret-left:before {
+    content: "U";
+}
+.icon-caret-right:before {
+    content: "V";
+}
+.icon-caret-up:before {
+    content: "W";
+}
+.icon-caret-up-down:before {
+    content: "X";
+}
+.icon-caret-up-two:before {
+    content: "Y";
+}
+.icon-caret-down:before {
+    content: "Z";
+}
+.icon-caret-down-two:before {
+    content: "0";
+}
+.icon-angle-down:before {
+    content: "1";
+}
+.icon-angle-left:before {
+    content: "2";
+}
+.icon-angle-right:before {
+    content: "3";
+}
+.icon-angle-up:before {
+    content: "4";
+}
+.icon-bitbucket-square:before {
+    content: "5";
+}
+.icon-bitbucket:before {
+    content: "6";
+}
+.icon-calendar:before {
+    content: "7";
+}
+.icon-building:before {
+    content: "8";
+}
+.icon-briefcase-case-two:before {
+    content: "9";
+}
+.icon-bar-chart:before {
+    content: "!";
+}
+.icon-code:before {
+    content: "\"";
+}
+.icon-delete-circle:before {
+    content: "#";
+}
+.icon-clock:before {
+    content: "$";
+}
+.icon-file-document:before {
+    content: "%";
+}
+.icon-file:before {
+    content: "&";
+}
+.icon-file-text:before {
+    content: "'";
+}
+.icon-folder3:before {
+    content: "(";
+}
+.icon-folder2:before {
+    content: ")";
+}
+.icon-flickr:before {
+    content: "*";
+}
+.icon-linkedin:before {
+    content: "+";
+}
+.icon-linkedin-square:before {
+    content: ",";
+}
+.icon-linux:before {
+    content: "-";
+}
+.icon-photo:before {
+    content: ".";
+}
+.icon-pin-map:before {
+    content: "/";
+}
+.icon-phone-mobile:before {
+    content: ":";
+}
+.icon-pinterest-square:before {
+    content: ";";
+}
+.icon-rss:before {
+    content: "<";
+}
+.icon-rss-two:before {
+    content: "=";
+}
+.icon-sitemap:before {
+    content: ">";
+}
+.icon-skype:before {
+    content: "?";
+}
+.icon-twitter:before {
+    content: "@";
+}
+.icon-twitter-square:before {
+    content: "[";
+}
+.icon-tumblr-square:before {
+    content: "]";
+}
+.icon-tumblr:before {
+    content: "^";
+}
+.icon-vk:before {
+    content: "_";
+}
+.icon-youtube:before {
+    content: "`";
+}
+.icon-youtube-play:before {
+    content: "{";
+}
+.icon-youtube-square:before {
+    content: "|";
+}
+.icon-windows:before {
+    content: "}";
+}
+.icon-talk-chat:before {
+    content: "~";
+}
+.icon-tag-2:before {
+    content: "\\";
+}
+.icon-tags:before {
+    content: "\e000";
+}
+.icon-screen-desktop:before {
+    content: "\e001";
+}
+.icon-search-find:before {
+    content: "\e002";
+}
+.icon-remove:before {
+    content: "\e003";
+}
+.icon-paper-clip:before {
+    content: "\e004";
+}
+.icon-letter-mail:before {
+    content: "\e005";
+}
+.icon-trash-bin:before {
+    content: "\e006";
+}
+.icon-instagram:before {
+    content: "\e007";
+}
+.icon-gears-setting:before {
+    content: "\e008";
+}
+.icon-facebook:before {
+    content: "\e009";
+}
+.icon-dropbox:before {
+    content: "\e00a";
+}
+.icon-download:before {
+    content: "\e00b";
+}
+.icon-document:before {
+    content: "\e00c";
+}
+.icon-exclamation-triangle:before {
+    content: "\e00d";
+}
+.icon-exclamation-circle:before {
+    content: "\e00e";
+}
+.icon-cog-gear:before {
+    content: "\e00f";
+}
+.icon-email-envelope:before {
+    content: "\e010";
+}
+
+// == Client logos
+
+$clients-list: "bigbrothers" "ccvi" "cerner" "ck" "commbank" "jedunn" "mars" "roasterie" "saia" "stlukeshospital" "stteresaacademy" "washingtonuniversity";
+@each $client-name in $clients-list {
+    .client-#{$client-name}-normal {
+        background: url("../img/clients/#{$client-name}-normal.png") center no-repeat;
+        &.hover {
+            background: url("../img/clients/#{$client-name}-hover.png") center no-repeat;
+        }
+        @media (max-width: $screen-sm-max) {
+            background-size: cover;
+            &.hover {
+                background-size: cover;
+            }
+        }
+    }
+}
+
+/*
+
+$logos: sprite-map("clients*/
+/*.png", $spacing: 5px, $layout: smart);
+
+$clients-list: "bigbrothers" "ccvi" "cerner" "ck" "commbank" "jedunn" "mars" "roasterie" "saia" "stlukeshospital" "stteresaacademy" "washingtonuniversity";
+@each $client-name in $clients-list {
+    .client-#{$client-name}-normal {
+        background: sprite($logos, #{$client-name}-hover);
+
+        background-image: url("/" + sprite-path($logos));
+        background-position: sprite-position($logos, #{$client-name}-normal);
+        @include sprite-dimensions($logos, #{$client-name}-normal);
+        &.over {
+            background-position: sprite-position($logos, #{$client-name}-hover);
+        }
+    }
+}
+*/
+.ballon {
+    width: 181px;
+    height: 130px;
+    background: url("../img/ballon-sprite.png") no-repeat left;
+    position: relative;
+    &.right {
+        background-position: right;
+        .icon {
+            left: 50px;
+        }
+    }
+    &.left {
+        background-position: left;
+        .icon {
+            left: -3px;
+            top: -10px;
+        }
+    }
+    .icon {
+        color: #fff;
+        font-size: 125px;
+        position: absolute;
+    }
+    .icon-house {
+        font-size: 140px;
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Brightergy Website",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Brightergy/Brightergy_Website",
+  "authors": [
+    "Ivan Vesely <ivan.vesely@brightergy.com>"
+  ],
+  "description": "Brightergy official website template",
+  "main": "index.html",
+  "keywords": [
+    "brightergy",
+    "template"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.3",
+    "jquery": "~2.1.3"
+  }
+}

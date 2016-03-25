@@ -1,0 +1,309 @@
+.form-brg {
+    .form-control {
+        border: 2px solid $border-gray;
+        font-size: $font-size-large;
+        padding: 15px 23px;
+        @include placeholder($border-gray);
+        margin: 0 0 30px;
+        height: inherit;
+    }
+    .form-action {
+        padding: 0 0 0;
+        width: 100%;
+        .btn {
+            margin: 0;
+            /*@include box-shadow(0px 20px 5px 20px rgba(255,255,255,1));*/
+        }
+    }
+    .gradient-bordered {
+        $start: $border-gray;
+        $end: rgba(red($start), blue($start), green($start), .26);
+
+        border-left: 0;
+        border-right: 0;
+        border-top: 2px solid $start;
+        border-bottom: 2px solid $end;
+
+        background-image: -webkit-gradient(linear, 0 0, 0 100%, from($start), to($end));
+        background-image: -webkit-linear-gradient($start, $end);
+        background-image: -moz-linear-gradient($start, $end), -moz-linear-gradient($start, $end);
+        background-image: -o-linear-gradient($start, $end), -o-linear-gradient($start, $end);
+        background-image: linear-gradient($start, $end), linear-gradient($start, $end);
+
+        background-size: 2px 100%;
+        background-position: 0 0, 100% 0;
+        background-repeat: no-repeat;
+    }
+    .leave-comment {
+        text-align: left;
+        margin: 35px 0 55px 0;
+    }
+}
+.wrapper-filter-form {
+    + hr {}
+}
+.filter-form {
+    @include clearfix();
+    &.learn {
+        @media (max-width: $screen-lg-min) {
+            display: none;
+        }
+    }
+    h3 {
+        text-transform: none;
+    }
+    label {
+        float: left;
+        height: 46px;
+        line-height: 46px;
+        margin-right: 20px;
+    }
+    .sort-box {
+        float: left;
+        width: 132px;
+        height: 46px;
+        line-height: 46px;
+        border: 2px solid $gray-light;
+        border-radius: 4px;
+        position: relative;
+        margin-right: 24px;
+        input {
+            padding: 0px 15px;
+            width: 100%;
+            height: 42px;
+            border: none;
+            outline: none;
+        }
+    }
+    .filter-group {
+        float: left;
+        margin-right: 35px;
+        .filter-element-wrapper {
+            float: left;
+            border: 2px solid $gray-light;
+            width: 176px;
+            height: 46px;
+            line-height: 46px;
+            position:relative;
+            input {
+                padding: 0px 15px;
+                width: 100%;
+                height: 42px;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+    .filter-group div:first-child {
+        border-right: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .filter-group div:last-child {
+        border-left: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .left-btn {
+        background: url("../img/btn-left-mark-gray.png") no-repeat;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        margin-top: -10px;
+        z-index: 1;
+    }
+    &.blog-filter {
+        @media (max-width:$screen-lg-min) {
+            display: none;
+        }
+        .filter-group div:first-child {
+            border-right: 2px solid $gray-light;
+        }
+        .sort-box {
+            margin-right: 200px;
+        }
+        .title {
+            width: 100%;
+            height: 42px;
+            text-align: left;
+            padding: 0px 15px;
+            border: none !important;
+            color: $gray-light;
+            cursor: pointer;
+        }
+        .filter-dropdown {
+            position: absolute;
+            z-index: 5;
+            background: $gray-lighter;
+            margin: 0;
+            padding: 0;
+            top: 45px;
+            width: 100%;
+            border-radius: 4px;
+            display: none;
+        }
+    }
+    .filter-dropdown li {
+        list-style: none;
+        text-align: left;
+        padding: 0px 15px;
+    }
+    .filter-dropdown a {
+        text-decoration: none;
+        color: $gray-light;
+        display: block;
+        width: 100%;
+    }
+    &.careers {
+        @media (width: $screen-xs) {
+            padding: 0 45px;
+        }
+        .row {
+            @include clearfix();
+            div {
+                @include clearfix();
+            }
+        }
+        h3 {
+            text-align: left;
+            margin: 8px 0;
+        }
+        label {
+            margin: 0;
+        }
+        .sort-box {
+            width: 100%;
+        }
+        .bottom-link-wrapper {
+            @include clearfix();
+            margin: 0 auto;
+            width: 100px;
+            @media (max-width: $screen-xs-max) {
+                padding-top: 40px;
+            }
+        }
+        .btn {
+            float: left;
+            padding: 10px 18px;
+            &:after {
+                content:"";
+                background: none;
+                border: none;
+                width: 0;
+                height: 0;
+            }
+            @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+.filter-element-wrapper.on {
+    .title {
+        background: $gray-lighter;
+    }
+    .left-btn {
+        background: url("../img/btn-left-mark-gray-up.png") no-repeat;
+    }
+}
+.wrapper-search {
+    float: left;
+    width: 253px;
+    position: relative;
+    .search-resources {
+        font-size: 16px;
+        width: 253px;
+        height: 46px;
+        line-height: 46px;
+        border: 2px solid $gray-light;
+        border-radius: 4px;
+    }
+    .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 0;
+        margin: -12px 10px;
+        color: #b4b5ba;
+    }
+}
+.filter-form-mobile {
+    @include clearfix();
+    @media (min-width: $screen-lg-min) {
+        display: none;
+    }
+    .row {
+        padding: 0;
+        position: relative;
+        z-index: 3;
+    }
+    .filter-parent-item {
+        background: url("../img/angle-down.png") no-repeat;
+        background-position: 85%;
+        text-align: left;
+        border-top: 1px solid #d8d8d9;
+        border-bottom: 1px solid #d8d8d9;
+        border-left: 1px solid #d8d8d9;
+        padding: 20px 15px;
+        &.on {
+            background: url("../img/angle-up.png") no-repeat;
+            background-color: $gray-lighter;
+            background-position: 85%;
+            border-bottom: 1px solid $gray-lighter;
+        }
+    }
+    .sub-item {
+        background: $gray-lighter;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        z-index: 2;
+        width: 100%;
+        display: none;
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        .wrapper-search {
+            float: none;
+            width: 80%;
+            margin: 20px auto;
+            input {
+                width: 100%;
+            }
+        }
+    }
+    li {
+        list-style: none;
+        .title {
+            background: url("../img/angle-down.png") no-repeat;
+            background-color: $gray-lighter;
+            background-position: 95%;
+            text-align: left;
+            list-style: none;
+            width: 100%;
+            border-bottom: 1px solid #d8d8d9;
+            padding: 15px 17px;
+            margin: 0 !important;
+            &.has-no-bg {
+                background: $gray-lighter;
+            }
+        }
+        .comment {
+            background: white;
+            text-align: left;
+            border-bottom: 1px solid #d8d8d9;
+            display: none;
+            p {
+                margin: 0;
+                padding: 20px 17px;
+            }
+        }
+    }
+}
+.filter-form-mobile div:first-child {
+    border-left: none;
+}

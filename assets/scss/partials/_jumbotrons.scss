@@ -1,0 +1,171 @@
+.container .jumbotron {
+    @media (max-width: $screen-sm-max) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.jumbotron {
+	background: none;
+	text-align: center;
+	color: #fff;
+	margin: 0;
+    padding-top: 100px;
+    padding-bottom: 65px;
+	h1 {
+		/*font-size: $font-size-h1;*/
+		margin-bottom: 27px;
+	}
+	h2 {
+		margin: 20px 0 !important;
+        padding: 0 !important;
+        + hr {
+            @include opacity(.3);
+        }
+	}
+	p {
+		font-size: $font-size-base;
+		line-height: $line-height-large;
+	}
+	.bottom-link-wrapper {
+		margin: 65px 0 40px;
+	}
+    @media (max-width: $screen-xs-max) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .bottom-link-wrapper {
+            margin: 40px 0 0;
+        }
+    }
+    @media (max-width: $screen-sm-max) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        .bottom-link-wrapper {
+            margin: 40px 0 0;
+        }
+    }
+}
+.brg-landing-masthead {
+    position: relative;
+	/*background: url("../img/img-bg-tall-1.jpg");*/
+	/*background-size: cover;*/
+	padding: 138px 0 43px;
+
+    .jumbotron {
+        padding: 43px 0;
+    }
+
+	.jumbotron p {
+		font-size: $font-size-large;
+        line-height: 1.7em;
+	}
+
+    #bgvid {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        min-width: 100%; min-height: 100%;
+        width: auto; height: auto; z-index: -100;
+        background: url("../img/img-bg-tall-1.jpg") no-repeat;
+        background-size: cover;
+    }
+
+    @media (max-width: $screen-xs-max) {
+        padding: 77px 0 43px;
+        .jumbotron p {
+            font-size: $font-size-base-xs;
+        }
+        .bottom-link-wrapper {
+            margin: 40px 0 0;
+        }
+    }
+}
+.section-brg-case-study {
+	background: url("../img/img-bg-normal-1.jpg");
+	background-size: cover;
+	.section-title {
+		color: #fff;
+	}
+}
+.section-brg-case-solutions {
+    background: url("../img/img-bg-normal-solutions.jpg");
+    background-size: cover;
+    .section-title {
+        color: #fff;
+    }
+}
+.section-brg-case-people {
+    background: url("../img/img-bg-normal-people.jpg");
+    background-size: cover;
+    .section-title {
+        color: #fff;
+    }  
+}
+.brg-subpage-masthead {
+    background-size: cover;
+    padding: 71px 0 0;
+    color: #fff;
+    .jumbotron {
+        padding: 43px 0;
+        h1 {
+            margin-bottom: 13px;
+            @media (max-width: $screen-xs-max) {
+                font-size: $font-size-h2;
+            }
+        }
+    }
+    .jumbotron p {
+        font-size: $font-size-large;
+        line-height: 1.7em;
+    }
+    > .wrapper-subtitle {
+        background-image: url("../img/img-masthead-subtitle.png");
+        background-size: cover;
+        padding: 47px 0;
+        text-align: center;
+        @media (max-width: $screen-xs-max) {
+            padding: 25px 0 0;
+        }
+        @media (width: $screen-xs) {
+            padding: 35px 0;
+        }
+    }
+    &.learn {
+        background-image: url("../img/img-bg-tall-2.jpg");
+    }
+    &.blog_article {
+        background-image: url("../img/img-bg-tall-3.jpg");
+    }
+    &.careers {
+        background-image: url("../img/img-bg-tall-4.jpg");
+    }
+    &.people {
+        background-image: url("../img/img-bg-tall-people.jpg");
+    }
+    &.solutions {
+        background-image: url("../img/img-bg-tall-solutions.jpg");
+    }
+    &.reimagine {
+        background-image: url("../img/img-bg-tall-reimagine.jpg");
+    }
+    &.template {
+        background-image: url("../img/img-bg-tall-template.jpg");
+    }
+    &.partners {
+        background-image: url("../img/img-bg-tall-5.jpg");
+    }
+    &.contact {
+        background-image: url("../img/img-bg-tall-6.jpg");
+        @media (max-width: $screen-md-max) {
+            background-position: 65%;
+        }
+    }
+    &.about {
+        background-image: url("../img/img-bg-tall-7.jpg");
+        background-position: right;
+    }
+}
+.wrapper-subtitle {
+    p {
+        margin: 0 0 3px;
+    }
+}

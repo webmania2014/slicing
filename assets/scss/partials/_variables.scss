@@ -1,0 +1,93 @@
+// Fonts
+$font-family-sans-serif:		'Lato', sans-serif;
+
+$font-family-base:        		$font-family-sans-serif;
+
+$font-size-base:          		16px;
+$font-size-large:         		18px; // ~18px
+$font-size-larger:         		20px; // ~20px
+$font-size-small:         		14px; // ~12px
+
+$font-size-base-xs:             15px;
+
+$font-size-h1:            		3.75em; // ~60px
+$font-size-h1-xs:            	2.33em; // ~60px
+$font-size-h2:            		2.18em; // ~35px
+$font-size-h2-xs:            	1.66em; // ~35px
+$font-size-h2-larger:			40px;
+$font-size-h3:            		1.56em; // ~25px
+$font-size-h4:            		ceil(($font-size-base * 1.25)); 
+$font-size-h5:            		$font-size-base;
+$font-size-h6:            		ceil(($font-size-base * 0.85)); 
+
+// == Colors ==
+//
+//
+
+// Common Colors
+$orange:                        #f2672a;
+$green:							#8d9638;
+$blue:							#0081b6;
+
+$gray:							#4e4f53;
+$gray-light:					#b4b5ba;
+$gray-lighter:					#f0efee;
+$gray-dark:						#3d3d40;
+$gray-border:					#d9dadc;
+
+// Brand Colors
+
+$brand-primary:					$orange;
+$brand-secondary:				$blue;
+
+// Border Colors
+$border-gray:					$gray-light;
+$border-gray-light:             $gray-lighter;
+
+// Scaffolding
+$text-color:                    $gray-dark;
+
+// Colors for client
+$color-commbank:                #006646;
+$color-ck:                      #59595c;
+$color-saia:                    #ce2c32;
+$color-jedunn:                  #004287;
+$color-stlukeshospital:         #004287;
+$color-bigbrothers:             #773c98;
+$color-stteresaacademy:         #efb100;
+$color-roasterie:               #282425;
+$color-washingtonuniversity:    #97001a;
+$color-mars:                    #282425;
+$color-cerner:                  #2691cd;
+$color-ccvi:                    #f67b00;
+
+
+
+// == Typography ==
+//
+//
+
+// == Spaces for padding/margin
+$mini-space:                    2px;
+$small-space:                   5px;
+$medium-space:                  10px;
+$large-space:                   15px;
+$x-large-space:                 20px;
+$xx-large-space:                25px;
+$xxx-large-space:               30px;
+
+// == Letter spacing
+$letter-spacing-base: 			0.03em;
+$letter-spacing-h1: 			5px;
+$letter-spacing-h2: 			0.04em;
+/*$letter-spacing-h3: 			0.2em;*/
+
+// == Line
+$line-height-base:				1.5em;
+$line-height-large:				1.75em;
+
+
+// == Screen size
+$screen-xxs-max:                $screen-xs-min - 1;
+$mobileNavWidth:                229px;
+$mobileNavHeight:               633px;

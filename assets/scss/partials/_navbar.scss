@@ -1,0 +1,208 @@
+.navbar {
+	margin: 0;
+	min-height: 80px;
+	background-color: transparent;
+	position: fixed;
+    @media (max-width: $screen-xs-max) {
+        position: absolute;
+    }
+	top: 0;
+	width: 100%;
+    /*@include transition-property(background-color, color);
+    @include transition-duration(0.2s, 0.2s);*/
+    .navbar-header {
+        position: relative;
+    }
+    @media (max-width: $screen-xs-max) {
+        position: static;
+        background: rgba(255,255,255,1);
+        border-color: $gray-light;
+        .navbar-brand {
+            background: url("../img/logo-brightergy-sprite.png") no-repeat top !important;
+        }
+        .navbar-nav > li > a {
+            color: $text-color;
+        }
+        .hamburger-bar {
+            background: $text-color;
+        }
+    }
+
+    @media (max-width: $screen-sm-max) {
+        .container {
+            width: 100%;
+            .navbar-brand {
+                float: none;
+                margin: 27px auto 23px;
+            }
+        }
+    }
+
+    .navbar-nav {
+        margin: 0;
+		> li {
+            position: static;
+            @media (max-width: $screen-xs-max) {
+                border-top: 1px solid $gray-lighter;
+                background: url("../img/angle-down.png") no-repeat;
+                background-position: 97%;
+            }
+			> a {
+				color: #fff;
+				text-transform: uppercase;
+                font-weight: 700;
+                padding: 30px 0;
+                margin: 0 28px;
+				&:focus, &:hover {
+					background: transparent;
+				}
+			}
+			&:last-child {
+				> a {
+					padding-right: 0;
+				}
+			}
+            &.active {
+                @media (max-width: $screen-xs-max) {
+                    background: url("../img/angle-up.png") no-repeat;
+                    background-position-x: 97%;
+                    background-position-y: 26px;
+                }
+                > a {
+                    border-bottom: 2px solid $brand-secondary;
+                    @media (max-width: $screen-xs-max) {
+                        border-bottom: 0;
+                    }
+                }
+                .dropdown {
+                    display: inline-table;
+                }
+            }
+		}
+        @media (max-width: $screen-xs-max) {
+            > li > a {
+                padding: 20px 20px;
+                margin: 0;
+            }
+        }
+	}
+
+	.navbar-brand {
+		background: url("../img/logo-brightergy-sprite.png") no-repeat bottom;
+		width: 189px;
+		height: 30px;
+		display: block;
+		font-size: 0;
+		margin: 27px 0 23px;
+	}
+    .hamburger-bar {
+        width: 20px;
+        height: 3px;
+        display: block;
+        margin: 0 0 3px;
+    }
+
+	&.has-bg {
+		background: rgba(255,255,255,1);
+		border-color: $gray-light;
+		.navbar-brand {
+			background: url("../img/logo-brightergy-sprite.png") no-repeat top;
+		}
+		.navbar-nav > li > a {
+			color: $text-color;
+		}
+        .hamburger-bar {
+            background: $text-color;
+        }
+	}
+
+    .dropdown {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+        left: 0;
+        background: #fff;
+        border-top: 1px solid #e1e1e3;
+        border-bottom: 1px solid #e1e1e3;
+        li > a {
+            color: $text-color;
+            padding-left: 0;
+            padding-right: 0;
+            letter-spacing: 0;
+            white-space: nowrap;
+            @media (max-width: $screen-sm-max) {
+                white-space: normal;
+            }
+            &:hover {
+                background: none;
+            }
+            .icon {
+                color: $gray-light;
+                font-size: 35px;
+                margin-left: -5px;
+                margin-right: 20px;
+                vertical-align: text-top;
+            }
+        }
+        .heading {
+            margin: 5px 0 30px;
+        }
+        .has-lseperator {
+            border-left: 1px solid #e1e1e3;
+            @media (max-width: $screen-xs-max) {
+                border-left: 0;
+            }
+        }
+        .column {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            padding-left: $grid-gutter-width;
+            padding-right: 0;
+            &:first-child {
+                padding-left: 0;
+            }
+            @media (max-width: $screen-xs-max) {
+                padding-left: 0 !important;
+                padding-bottom: 0 !important;
+            }
+        }
+        .logo {
+            margin-left: -32px;
+            @media (max-width: $screen-xs-max) {
+                margin: 0;
+            }
+        }
+        .more {
+            font-weight: 700;
+            text-align: center;
+            margin: 0 0 40px;
+        }
+        @media (max-width: $screen-xs-max) {
+            position: static;
+            padding: 20px 20px;
+            background-color: $gray-lighter;
+            .heading {
+                margin: 5px 0 10px;
+            }
+        }
+    }
+    .grid-clients {
+        width: 100%;
+        .client-box {
+            @media (max-width: $screen-xs-max) {
+                background: $gray-lighter !important;
+                width: 50%;
+                height: 140px;
+                &:after {
+                    content: '';
+                    background: $gray-lighter;
+                }
+            }
+        }
+    }
+}
+.navbar-toggle {
+    margin-top: 23px;
+}

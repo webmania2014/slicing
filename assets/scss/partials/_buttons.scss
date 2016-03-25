@@ -1,0 +1,71 @@
+.btn {
+	font-size: $font-size-base;
+	border-width: 2px;
+	padding: 18px 45px;
+	position: relative;
+    font-weight: bold;
+    @media (max-width: $screen-xs-max) {
+        padding: 18px 23px;
+    }
+
+	@include box-shadow(none);
+
+	&:after {
+		display: block;
+		content: '3';
+		position: absolute;
+		width: 20px;
+		height: 20px;
+        border-radius: 50%;
+        border: 2px solid $brand-primary;
+        font-family: "brightergy-icons";
+        font-size: 13px;
+        padding-left: 2px;
+        line-height: 15px;
+
+		margin-left: -10px;
+		bottom: -10px;
+		left: 50%;
+	}
+
+	&.btn-brg-white {
+        background: url(../img/btn-white-bg.png) no-repeat;
+        width: 230px;
+        height: 69px;
+		color: #fff;
+        border-width: 0;
+        padding: 18px 10px;
+		&:after{
+            content: '';
+            border: none;
+		}
+	}
+
+	&.btn-brg-primary {
+		border-color: $brand-primary;
+		color: $brand-primary;
+        background: #fff;
+        @include transition(background-color 0.2s ease-in-out);
+		&:after{
+            border-color: $brand-primary;
+            background: #fff;
+		}
+        &:hover {
+            background: lighten($brand-primary, 35%);
+        }
+	}
+
+    &.btn-brg-secondary {
+        border-color: $brand-secondary;
+        color: $brand-secondary;
+        background: #fff;
+        @include transition(background-color 0.2s ease-in-out);
+        &:after{
+            border-color: $brand-secondary;
+            background: #fff;
+        }
+        &:hover {
+            background: lighten($brand-secondary, 35%);
+        }
+    }
+}
